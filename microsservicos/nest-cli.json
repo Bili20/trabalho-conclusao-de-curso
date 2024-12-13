@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": ".",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": false
+  },
+  "monorepo": true,
+  "root": ".",
+  "projects": {
+    "pessoa": {
+      "type": "application",
+      "root": "apps/pessoa",
+      "entryFile": "main",
+      "sourceRoot": "apps/pessoa/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/pessoa/tsconfig.app.json"
+      }
+    },
+    "produto": {
+      "type": "application",
+      "root": "apps/produto",
+      "entryFile": "main",
+      "sourceRoot": "apps/produto/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/produto/tsconfig.app.json"
+      }
+    },
+    "pedido": {
+      "type": "application",
+      "root": "apps/pedido",
+      "entryFile": "main",
+      "sourceRoot": "apps/pedido/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/pedido/tsconfig.app.json"
+      }
+    },
+    "notificacao": {
+      "type": "application",
+      "root": "apps/notificacao",
+      "entryFile": "main",
+      "sourceRoot": "apps/notificacao/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/notificacao/tsconfig.app.json"
+      }
+    },
+    "nota-fiscal": {
+      "type": "application",
+      "root": "apps/nota-fiscal",
+      "entryFile": "main",
+      "sourceRoot": "apps/nota-fiscal/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nota-fiscal/tsconfig.app.json"
+      }
+    },
+    "historico": {
+      "type": "application",
+      "root": "apps/historico",
+      "entryFile": "main",
+      "sourceRoot": "apps/historico/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/historico/tsconfig.app.json"
+      }
+    }
+  }
+}
