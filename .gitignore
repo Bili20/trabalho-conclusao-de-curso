@@ -1,0 +1,19 @@
+# Ignorar node_modules e builds em ambas as pastas
+/monolith/node_modules
+/monolith/dist
+/microservices/node_modules
+/microservices/dist
+
+# Ignorar logs
+**/*.log
+
+# Ignorar arquivos de configuração local
+.env
+.env.local
+*.env
+
+# Ignorar IDEs e arquivos temporários
+.DS_Store
+.idea/
+.vscode/
+*.tmp
